@@ -1,0 +1,630 @@
+$sqC: #191a27;
+$sqBC:#FCFCF3;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    body {
+        background-color: #FCFCF3;
+        main {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            perspective: 1000PX;
+            .one {
+                height: 50px;
+                width: 100vw;
+                position: absolute;
+                background-color: $sqBC;
+                animation-name: one;
+                animation-duration: 10s;
+                animation-timing-function: cubic-bezier(.45, .06, .47, .98);
+                animation-fill-mode: both;
+                will-change: animation;
+                h1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-weight: lighter;
+                }
+                .bl {
+                    position: absolute;
+                    height: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background-color: $sqBC;
+                    animation-name: bl;
+                    animation-duration: 10s;
+                    animation-timing-function: cubic-bezier(.28, .09, .31, .99);
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .l-sq {
+                    position: absolute;
+                    border-top: 25px solid $sqC;
+                    border-left: 25px solid $sqC;
+                    border-right: 25px solid transparent;
+                    border-bottom: 25px solid transparent;
+                    width: 0;
+                    height: 0;
+                    display: inline-block;
+                    animation-name: l-sq;
+                    animation-duration: 10s;
+                    animation-timing-function: cubic-bezier(.28, .09, .31, .99);
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .br {
+                    position: absolute;
+                    height: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    background-color: $sqBC;
+                    animation-name: br;
+                    animation-duration: 10s;
+                    animation-timing-function: cubic-bezier(.28, .09, .31, .99);
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .r-sq {
+                    position: absolute;
+                    right: calc(50% - 25px);
+                    border-top: 25px solid transparent;
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid $sqC;
+                    border-bottom: 25px solid $sqC;
+                    width: 0;
+                    height: 0;
+                    display: inline-block;
+                    animation-name: r-sq;
+                    animation-duration: 10s;
+                    animation-timing-function: cubic-bezier(.28, .09, .31, .99);
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .sq {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $sqC;
+                    animation-name: sq;
+                    animation-duration: 10s;
+                    animation-timing-function: cubic-bezier(.18, .52, .19, .99);
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+            }
+            .two {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                .s1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotateZ(45deg);
+                    background-color: #C7D35E;
+                    animation-name: s1;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .s2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotateZ(45deg);
+                    background-color: #DF7D81;
+                    animation-name: s2;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+                .s3 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotateZ(45deg);
+                    background-color: #d0e3f2;
+                    animation-name: s3;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    will-change: animation;
+                }
+            }
+            .main {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                .dc {
+                    width: 100vw;
+                    height: 100vh;
+                    position: absolute;
+                    .circle {
+                        width: 100vw;
+                        height: 100vh;
+                        position: absolute;
+                        .trC {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 17px;
+                            right: 17px;
+                            background-color: black;
+                            animation-name: circle;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                        .tlC {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 17px;
+                            left: 17px;
+                            background-color: black;
+                            animation-name: circle;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                        .brC {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: 17px;
+                            right: 17px;
+                            background-color: black;
+                            animation-name: circle;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                        .blC {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: 17px;
+                            left: 17px;
+                            background-color: black;
+                            animation-name: circle;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                    }
+                    .line {
+                        width: 100vw;
+                        height: 100vh;
+                        position: absolute;
+                        .TB {
+                            width: calc(100vw - 96px);
+                            height: calc(100vh - 48px);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-top: black solid 1px;
+                            border-bottom: black solid 1px;
+                            animation-name: lineTB;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                        .LR {
+                            width: calc(100vw - 48px);
+                            height: calc(100vh - 96px);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-right: black solid 1px;
+                            border-left: black solid 1px;
+                            animation-name: lineLR;
+                            animation-duration: 10s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: both;
+                            will-change: animation;
+                        }
+                    }
+                }
+                .content {
+                    width: calc(100vw - 96px);
+                    height: calc(100vh - 96px);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    animation-name: content;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    will-change: animation;
+                    .base {
+                        width: 100%;
+                        height: 100%;
+                        .CT {
+                            width: 100%;
+                            height: 50%;
+                            position: relative;
+                            .text-box {
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: 10%;
+                                .text {
+                                    font-weight: lighter;
+                                    font-size: 3rem;
+                                    margin-bottom: 2px;
+                                }
+                                .text-line {
+                                    position: absolute;
+                                    bottom: 0;
+                                    height: 2px;
+                                    animation-name: text-line;
+                                    animation-duration: 2s;
+                                    animation-timing-function: linear;
+                                    animation-fill-mode: both;
+                                    animation-iteration-count: infinite;
+                                    will-change: animation;
+                                }
+                            }
+                        }
+                        .CB {
+                            width: 100%;
+                            height: 50%;
+                            position: relative;
+                            .select-box {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                height: 40px;
+                                .sOne {
+                                    display: inline-block;
+                                    position: relative;
+                                }
+                                .sTwo {
+                                    display: inline-block;
+                                    position: relative;
+                                }
+                                .sThree {
+                                    display: inline-block;
+                                    position: relative;
+                                }
+                                .sFour {
+                                    display: inline-block;
+                                    position: relative;
+                                }
+                                .SB {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    margin: 10px;
+                                    background-color: #C7B3D6;
+                                }
+                                .SC {
+                                    display: inline-block;
+                                    font-weight: lighter;
+                                    vertical-align: top;
+                                    line-height: 40px;
+                                    text-align: center;
+                                }
+                                .link {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: transparent;
+                                    transition: .25s;
+                                    border-left: solid 2px #c55c66;
+                                    opacity: 0;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                                .Sline {
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    bottom: -2px;
+                                    height: 2px;
+                                    width: 140%;
+                                    background-color: #ea8b98;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes bl {
+    0% {
+        width: calc(50% - 25px);
+    }
+    17% {
+        width: calc(50% - 25px);
+    }
+    29% {
+        width: 10%;
+    }
+    34% {
+        width: 10%;
+    }
+    44% {
+        width: calc(50% - 25px);
+    }
+    100% {
+        width: calc(50% - 25px);
+    }
+}
+
+@keyframes l-sq {
+    0% {
+        left: calc(50% - 25px);
+    }
+    17% {
+        left: calc(50% - 25px);
+    }
+    29% {
+        left: 10%;
+    }
+    34% {
+        left: 10%;
+    }
+    44% {
+        left: calc(50% - 25px);
+    }
+    100% {
+        left: calc(50% - 25px);
+    }
+}
+
+@keyframes br {
+    0% {
+        width: calc(50% - 25px);
+    }
+    17% {
+        width: calc(50% - 25px);
+    }
+    29% {
+        width: 10%;
+    }
+    34% {
+        width: 10%;
+    }
+    44% {
+        width: calc(50% - 25px);
+    }
+    100% {
+        width: calc(50% - 25px);
+    }
+}
+
+@keyframes r-sq {
+    0% {
+        right: calc(50% - 25px);
+    }
+    17% {
+        right: calc(50% - 25px);
+    }
+    29% {
+        right: 10%;
+    }
+    34% {
+        right: 10%;
+    }
+    44% {
+        right: calc(50% - 25px);
+    }
+    100% {
+        right: calc(50% - 25px);
+    }
+}
+
+@keyframes sq {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+    5% {
+        width: 100vw;
+        height: 100vh;
+    }
+    11% {
+        width: 100vw;
+        height: 50px;
+    }
+    16% {
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+    }
+    17% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    44% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    45% {
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes one {
+    0% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    34% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    48% {
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 999px) rotateZ(-45deg);
+    }
+    100% {
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 999px) rotateZ(-45deg);
+    }
+}
+
+@keyframes s1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    45% {
+        width: 0;
+        height: 0;
+    }
+    55% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+    100% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+}
+
+@keyframes s2 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    47% {
+        width: 0;
+        height: 0;
+    }
+    57% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+    100% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+}
+
+@keyframes s3 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    49% {
+        width: 0;
+        height: 0;
+    }
+    59% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+    100% {
+        width: calc(max(100vh, 100vw) + max(50vh, 50vw));
+        height: calc(max(100vh, 100vw) + max(50vh, 50vw));
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lineTB {
+    0% {
+        width: calc(100vw - 96px);
+        height: calc(100vh + 4px);
+    }
+    59% {
+        height: calc(100vh + 4px);
+    }
+    65% {
+        height: calc(100vh - 48px);
+    }
+    100% {
+        width: calc(100vw - 96px);
+        height: calc(100vh - 48px);
+    }
+}
+
+@keyframes lineLR {
+    0% {
+        width: calc(100vw + 4px);
+        height: calc(100vh - 96px);
+    }
+    59% {
+        width: calc(100vw + 4px);
+    }
+    65% {
+        width: calc(100vw - 48px);
+    }
+    100% {
+        width: calc(100vw - 48px);
+        height: calc(100vh - 96px);
+    }
+}
+
+@keyframes content {
+    0% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
